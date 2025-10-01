@@ -1,80 +1,12 @@
 {
-  "name": "Aarnav Hariramani",
-  "role": "CS @ Stevens \u2022 Researcher @ eBay \u2022 Quant @ SSMIF",
-  "location": "Monroe Township, NJ",
-  "email": "aarnavhariramani@gmail.com",
-  "links": [
-    {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/aarnav-hariramani-73b538328/"
-    },
-    {
-      "label": "GitHub",
-      "href": "https://github.com/aarnav-hariramani"
+  "profile": {
+    "name": "Aarnav Hariramani",
+    "role": "CS @ Stevens \u2022 Researcher @ eBay \u2022 Quant @ SSMIF",
+    "email": "aarnavhariramani@gmail.com",
+    "links": {
+      "github": "https://github.com/aarnav-hariramani",
+      "linkedin": "https://www.linkedin.com/in/aarnav-hariramani-73b538328/",
+      "resume": "/assets/Aarnav_Hariramani_Resume.pdf"
     }
-  ],
-  "skills": [
-    "Python",
-    "R",
-    "Java",
-    "JavaScript",
-    "C/C++",
-    "SQL",
-    "PyTorch",
-    "TensorFlow",
-    "FAISS",
-    "HuggingFace",
-    "AWS",
-    "Docker",
-    "Git"
-  ],
-  "experience": [
-    {
-      "company": "eBay x Stevens Institute of Technology",
-      "title": "Undergraduate Researcher",
-      "date": "Dec 2024 \u2013 Present",
-      "bullets": [
-        "NEATJudge evolutionary selector improved LLM\u2011as\u2011Judge accuracy by ~23%.",
-        "Authored 'What Test is the Right Test?' and presented internally; prepping ICLR (<5% acc.)."
-      ]
-    },
-    {
-      "company": "Stevens SMIF (Macro Strategies)",
-      "title": "Quantitative Analyst Intern",
-      "date": "Jan 2025 \u2013 Present",
-      "bullets": [
-        "Multi\u2011factor models (OLS, CAPM, HAR, RNN) for sector returns on $1.5M AUM.",
-        "FFT diagnostics & model registry for robust inference."
-      ]
-    },
-    {
-      "company": "Aquatics United",
-      "title": "Website Development Intern",
-      "date": "Dec 2023 \u2013 Feb 2024",
-      "bullets": [
-        "React redesign \u2192 +15% mobile traffic; backend fetch optimizations (~200ms).",
-        "SEO automation & caching \u2192 +17% indexing and \u2212120ms load time."
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "name": "FAISS Semantic RAG Chatbot",
-      "desc": "MiniLM embeddings on 49,470 items; PQ ~72.5MB; <100ms retrieval.",
-      "tags": [
-        "FAISS",
-        "RAG",
-        "MiniLM"
-      ]
-    },
-    {
-      "name": "Cognate Detection via Siamese",
-      "desc": "Siamese nets + Qwen 2.5; +12% BLEU for cross\u2011lingual cognates.",
-      "tags": [
-        "NLP",
-        "PyTorch",
-        "Qwen"
-      ]
-    }
-  ]
+  }
 }
