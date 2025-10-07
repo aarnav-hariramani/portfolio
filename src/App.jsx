@@ -8,12 +8,11 @@ function formatDate(){ const d=new Date(); return d.toLocaleDateString(undefined
 function Seg({value,setValue}){ const opts=['1W','1M','1Y','ALL']; return <div className="seg">{opts.map(o=>(<button key={o} className={value===o?'active':''} onClick={()=>setValue(o)}>{o}</button>))}</div> }
 
 export default function App(){
-  const [open, setOpen] = useState(true);      // open by default so big chart shows
-  const [range, setRange] = useState('ALL');
-  const [live, setLive] = useState(null);
-  const [repos, setRepos] = useState([]);      // NEW: per-repo activity
-  const [loading, setLoading] = useState(true);// NEW: intro + data loading
-  const [q, setQ] = useState('');              // NEW: search text
+  const [open,setOpen]=useState(false)
+  const [range,setRange]=useState('ALL')
+  const [live,setLive]=useState(null)
+  const [loading,setLoading]=useState(false)
+  const [err,setErr]=useState(null)
 
 
   useEffect(()=>{ if(!open) return; setLoading(true); fetch('/api/github?login=aarnav-hariramani').then(r=>r.json()).then(j=>{setLive(j);setLoading(false)}).catch(e=>{setErr(String(e));setLoading(false)}) },[open])
